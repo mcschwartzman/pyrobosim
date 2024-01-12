@@ -1,15 +1,13 @@
-# pyrobosim
+ROS 2 Robot Simulator with custom A* Implementation
 
-[![Pyrobosim Tests](https://github.com/sea-bass/pyrobosim/actions/workflows/tests.yml/badge.svg?branch=main)](https://github.com/sea-bass/pyrobosim/actions/workflows/tests.yml)
-[![Documentation Status](https://readthedocs.org/projects/pyrobosim/badge/?version=latest)](https://pyrobosim.readthedocs.io/en/latest/?badge=latest)
+### To test:
+1. Clone to a valid colcon ws
+2. colcon build
+3. Run `python examples/demo.py --multirobot`
+4. Select `robot2`. This robot has been configured to use the new a* planner.
+5. Select a random goal and hit "navigate" to see the planner in action
 
-ROS 2 enabled 2D mobile robot simulator for behavior prototyping.
-
-By Sebastian Castro, 2022-2023
-
-Refer to the [full documentation](https://pyrobosim.readthedocs.io/) for setup, usage, and other concepts.
-
-We look forward to your open-source contributions to pyrobosim.
-For more information, refer to the [contributor guide](CONTRIBUTING.md).
-
-![Example animation of the simulator](docs/source/media/pyrobosim_demo.gif)
+### To-do:
+- Build waypoint reducer to smooth path
+- Implement additional heuristic options
+- Add configurable diagonal movement
